@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Monorepo for tarangjanawalkar.com",
+  "homepage": "https://github.com/Tarang74/portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/Tarang74/portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tarang74/portfolio.git"
+  },
+  "license": "MIT",
+  "author": "Tarang Janawalkar",
+  "scripts": {
+    "build:root": "(cd root && npm ci && npm run build)",
+    "build:fluid": "(cd fluid/app/web && npm ci && npm run build)",
+    "build:farm": "(cd farm/client && npm ci && npm run build)",
+    "build": "npm run build:root && npm run build:fluid && npm run build:farm",
+    "deploy:root": "wrangler deploy",
+    "deploy:fluid": "wrangler deploy --config wrangler.fluid.jsonc",
+    "deploy:farm": "wrangler deploy --config wrangler.farm.jsonc",
+    "deploy": "npm run deploy:root && npm run deploy:fluid && npm run deploy:farm"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

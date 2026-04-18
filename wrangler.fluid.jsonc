@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fluid-sim",
+  "compatibility_date": "2025-12-10",
+  "assets": {
+    "directory": "./fluid/app/web/dist",
+  },
+  "observability": {
+    "enabled": true
+  }
+}

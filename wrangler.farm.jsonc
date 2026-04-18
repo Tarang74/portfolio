@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aura-farmers",
+  "compatibility_date": "2025-12-10",
+  "assets": {
+    "directory": "./farm/client/dist",
+  },
+  "observability": {
+    "enabled": true
+  }
+}

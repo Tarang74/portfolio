@@ -1,0 +1,9 @@
+[submodule "root"]
+	path = root
+	url = git@github.com:Tarang74/tarangjanawalkar.com
+[submodule "fluid"]
+	path = fluid
+	url = git@github.com:Tarang74/fluid-sim
+[submodule "farm"]
+	path = farm
+	url = git@github.com:Tarang74/qut-aiml-hackathon
